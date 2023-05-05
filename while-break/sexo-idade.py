@@ -1,5 +1,3 @@
-sexo = ''
-continuar = ''
 maiores = homens = mulheresMenoresVinte = 0 
 print('CADASTRANDO PESSOAS')
 while True:
@@ -10,7 +8,7 @@ while True:
         if sexo == 'M' or sexo == 'F':
             break
     print('-'*30)
-    if idade > 18:
+    if idade >= 18:
         maiores += 1
     if sexo == 'M':
         homens += 1
@@ -23,5 +21,5 @@ while True:
     if continuar == 'N':
         break
 print('-'*30)
-print(f'{maiores} pessoas tem mais de 18 anos. {homens} homens cadastrados.')
+print(f'{maiores} pessoas é maior de idade. {homens} homens cadastrados.')
 print(f'{mulheresMenoresVinte} mulheres tem menos de 20 anos')
